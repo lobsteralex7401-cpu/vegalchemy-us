@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order | VEGALCHEMY</title>
+<meta name="description" content="Order VEGALCHEMY plant-based food on Amazon.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<!-- This is the page behind the QR code printed on every pouch: https://meetsuu.us/order
+     When AMAZON_URL in ../assets/config.js is filled in, visitors are redirected to Amazon immediately. -->
+<script src="../assets/config.js"></script>
+</head>
+<body data-order-page>
+<main id="contact">
+  <div class="wrap order-box">
+    <a href="../"><img class="mark" src="../assets/logo.svg" alt="VEGALCHEMY 蔬味平生" width="220" height="61"></a>
+    <p class="eyebrow">Order</p>
+
+    <div id="order-soon">
+      <h1>Coming soon on Amazon</h1>
+      <p class="lede" style="margin-left:auto;margin-right:auto">Our Amazon store isn&rsquo;t live just yet. This QR code will take you straight to our products the moment it is. Questions in the meantime? Reach our US partner below.</p>
+      <div class="order-card">
+        <h3>Phoenix Forest INC.</h3>
+        <address>
+          9500 7th Street, Unit E<br>
+          Rancho Cucamonga, CA 91730<br>
+          <a href="mailto:chichiusa.2025@gmail.com">chichiusa.2025@gmail.com</a><br>
+          <a href="tel:+16266733164">626-673-3164</a>
+        </address>
+        <!-- Same contact as the main site footer. TODO: confirm with Phoenix Forest. -->
+      </div>
+    </div>
+
+    <!-- Shown only when per-product Amazon links exist but no store link -->
+    <div id="order-picker" hidden>
+      <h1>Choose your pouch</h1>
+      <div class="cta-row">
+        <a class="btn" href="#" data-amazon="konjac" data-live="Konjac Instant Noodles on Amazon" data-soon="Konjac Instant Noodles: coming soon"><span data-label>Konjac Instant Noodles</span></a>
+        <a class="btn" href="#" data-amazon="sashimi" data-live="Plant-Based Sashimi on Amazon" data-soon="Plant-Based Sashimi: coming soon"><span data-label>Plant-Based Sashimi</span></a>
+      </div>
+    </div>
+
+    <p style="margin-top:28px"><a class="btn ghost" href="../">Back to home</a></p>
+  </div>
+</main>
+<script src="../assets/site.js"></script>
+</body>
+</html>
