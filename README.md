@@ -55,3 +55,8 @@ window.VEGA_CONFIG = {
 5. 上線後用手機掃一次實際包裝上的 QR code，確認 `https://meetsuu.us/order` 會轉到亞馬遜；沒填連結時會看到 Coming soon 頁。
 6. 注意：`meetsuu.com` 是蔬味平生台灣官網（FreeStore），`meetsuu.us` 是這個新站，兩邊網域別搞混、DNS 別動到 .com。
 7. 日後改版：改完檔案重新上傳／push 即可；`/order` 頁已設 noindex，不會被搜尋引擎收錄。
+
+
+## 預覽版（2026-10-22）
+
+目前推在 GitHub Pages 當預覽給奇奇看，加了不被搜尋引擎收錄的設定。**正式上線 meetsuu.us 前要拿掉**：`index.html` 的 `<meta name="robots" content="noindex, nofollow">` 與 `robots.txt`（`order/index.html` 本來就有 noindex，轉址頁可留）。
